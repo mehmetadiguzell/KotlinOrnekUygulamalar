@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="secilenBesin"
+            type="com.mehmetadiguzel.besinlerkitabi.model.Besin" />
+        
+    </data>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BesinDetayiFragment">
+
+    <ImageView
+        android:id="@+id/besinImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="250dp"
+        android:scaleType="fitCenter"
+        android:dowloandImage="@{secilenBesin.besinGorsel}" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/besinIsmi"
+        android:layout_below="@id/besinImage"
+        android:text="@{secilenBesin.besinIsim}"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/besinKalori"
+        android:layout_below="@id/besinIsmi"
+        android:text="@{secilenBesin.besinKalori}"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/besinKarbon"
+        android:layout_below="@id/besinKalori"
+        android:text="@{secilenBesin.besinKarbonhidrat}"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/besinProtein"
+        android:layout_below="@id/besinKarbon"
+        android:text="@{secilenBesin.besinProtein}"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/besinYag"
+        android:layout_below="@id/besinProtein"
+        android:text="@{secilenBesin.besinYag}"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="6dp"
+        android:textSize="25sp"/>
+
+
+
+</RelativeLayout>
+</layout>
